@@ -1,4 +1,4 @@
-package com.example.lesson3
+package com.zelalem.mp
 
 import org.junit.Test
 
