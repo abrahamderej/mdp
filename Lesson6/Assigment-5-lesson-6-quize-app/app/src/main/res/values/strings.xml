@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_reset">RESET</string>
+    <string name="q1s1">.kot</string>
+    <string name="q1s2">.android</string>
+    <string name="q1s3">.kt or .kts</string>
+    <string name="q2s1">Sealed classes</string>
+    <string name="q2s2">Lambda functions</string>
+    <string name="q2s3">The Kotlin Extension</string>
+    <string name="question_1">Which extension is responsible to save Kotlin files?</string>
+    <string name="question_2">what handles null exceptions in kotlin?</string>
+</resources>
