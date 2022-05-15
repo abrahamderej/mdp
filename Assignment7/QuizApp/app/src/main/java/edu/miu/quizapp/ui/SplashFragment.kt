@@ -36,7 +36,7 @@ class SplashFragment : BaseFragment() {
             }else{
                 Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_welcomeFragment)
             }
-        }, 5000)
+        }, 1500)
     }
 
     fun insertDataToDB(){
