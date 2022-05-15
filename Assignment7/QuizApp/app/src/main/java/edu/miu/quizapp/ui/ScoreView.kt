@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class ScoreView : ViewModel() {
+
     private  var score = 0
     private var scoreLiveData= MutableLiveData<Int>()
     fun getInitialScore(): MutableLiveData<Int> {

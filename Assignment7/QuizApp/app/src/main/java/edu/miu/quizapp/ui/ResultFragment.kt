@@ -15,11 +15,12 @@ class ResultFragment : BaseFragment() {
     private lateinit var tvScore: TextView
     private lateinit var btnResult: Button
     private lateinit var btnTryAgain: Button
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_result, container, false)
         tvScore = view.findViewById(R.id.tv_score)
         val score = ResultFragmentArgs.fromBundle(requireArguments()).score

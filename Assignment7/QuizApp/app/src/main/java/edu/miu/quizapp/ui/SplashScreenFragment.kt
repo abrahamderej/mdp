@@ -13,7 +13,7 @@ import edu.miu.quizapp.utils.BaseFragment
 import edu.miu.quizapp.utils.PrefManager
 import kotlinx.coroutines.launch
 
-class SplashFragment : BaseFragment() {
+class SplashScreenFragment : BaseFragment() {
 
     private lateinit var tvWelcome: TextView
     private var prefManager: PrefManager? = null

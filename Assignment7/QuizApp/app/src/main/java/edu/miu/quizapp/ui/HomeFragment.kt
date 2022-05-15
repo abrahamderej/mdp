@@ -31,11 +31,12 @@ class HomeFragment : BaseFragment() {
     private var answers: MutableList<String> = mutableListOf()
     private lateinit var currentQuiz: Quiz
     private var isFirstTime = true
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val skipBtn = view.findViewById<Button>(R.id.btn_qstn_skip)
         val nextBtn = view.findViewById<Button>(R.id.btn_qstn_next)

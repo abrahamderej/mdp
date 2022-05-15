@@ -34,7 +34,6 @@ class WelcomeFragment : BaseFragment() {
         val view = inflater.inflate(R.layout.fragment_welcome, container, false)
         prefManager = PrefManager(context)
 
-        // Making notification bar transparent
         activity?.window?.decorView?.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
 
         viewPager = view.findViewById(R.id.view_pager) as ViewPager
@@ -43,8 +42,8 @@ class WelcomeFragment : BaseFragment() {
         btnNext = view.findViewById(R.id.btn_next) as Button
 
         layouts = intArrayOf(
-            R.layout.welcome_slide1,
-            R.layout.welcome_slide2,
+            R.layout.slide1,
+            R.layout.slide2,
         )
 
         addBottomDots(0)
