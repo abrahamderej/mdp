@@ -10,18 +10,15 @@ import edu.miu.quizapp.R
 import edu.miu.quizapp.data.Quiz
 import edu.miu.quizapp.data.QuizDB
 import edu.miu.quizapp.utils.BaseFragment
-import edu.miu.quizapp.utils.PrefManager
 import kotlinx.coroutines.launch
 
 class SplashScreenFragment : BaseFragment() {
 
     private lateinit var tvWelcome: TextView
-    private var prefManager: PrefManager? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        prefManager = PrefManager(context)
         val view = inflater.inflate(R.layout.fragment_splash, container, false)
         tvWelcome = view.findViewById(R.id.logo_welcome)
         insertDataToDB()
@@ -31,11 +28,7 @@ class SplashScreenFragment : BaseFragment() {
     override fun onResume(){
         super.onResume()
         tvWelcome.postDelayed({
-            if (prefManager?.isFirstTimeLaunch()!!) {
-                Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_homeFragment)
-            }else{
-                Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_welcomeFragment)
-            }
+            Navigation.findNavController(requireView()).navigate(R.id.action_splashFragment_to_homeFragment)
         }, 1500)
     }
 
